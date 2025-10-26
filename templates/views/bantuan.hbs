@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    {{>head}}
+<body>
+    <div class="main-content">
+    {{>header}}
+    <div class="bantuan">
+    <ol type="a" style = "font-weight:bold;">
+  <li>
+    <dl>
+      <dt>Halaman ini digunakan untuk apa?</dt>
+      <dd>Halaman ini digunakan untuk menjelaskan pertanyaan mengenai aplikasi ini</dd>
+    </dl> 
+  </li>
+  <li>
+    <dl>
+      <dt>Apa itu API?</dt>
+      <dd>API (Application Programming Interface) adalah sebuah perantara atau jembatan yang memungkinkan dua 
+        aplikasi atau sistem berbeda untuk saling berkomunikasi dan bertukar data. 
+        API menyediakan aturan, format, dan cara tertentu yang harus diikuti oleh 
+        aplikasi yang ingin mengambil atau mengirim data. Dengan adanya API, sebuah
+         aplikasi tidak perlu mengetahui bagaimana cara kerja internal aplikasi lain, 
+         cukup mengetahui endpoint nya saja. Contohnya, saat aplikasi 
+         cuaca ini menampilkan kondisi cuaca, sebenarnya aplikasi atau website ini mengambil 
+         data dari server lain melalui API, yaitu weatherstack.com.</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>API apa yang digunakan dalam aplikasi ini?</dt>
+      <dd>
+        <ol>
+            <li>https://api.mapbox.com</li>
+            <li>http://api.weatherstack.com</li>
+            <li>http://api.mediastack.com</li>
+        </ol> 
+</dd>
+    </dl>
+  </li>
+  <li>
+    <dl>
+      <dt>Salah satu pola arsitektur API adalah RESTful</dt>
+        <img class="restful-img" src="./img/RESTful.png">
+      <dd>RESTful API adalah salah satu arsitektu API. Pada 
+        RESTful API, setiap endpoint (URL) dianggap sebagai resource yang dapat 
+        diakses oleh client menggunakan HTTP method seperti GET, POST, PUT, atau 
+        DELETE. Proses dimulai ketika client yang dapat berupa browser di komputer atau aplikasi di smartphone mengirimkan permintaan HTTP (HTTP request) kepada server. Permintaan ini berisi HTTP method (seperti GET, POST, PUT, DELETE) dan endpoint (alamat atau URL resource yang ingin diakses). Setelah menerima permintaan tersebut, server memprosesnya sesuai dengan logika yang telah didefinisikan pada backend, seperti mengambil data dari database atau menjalankan sebuah operasi tertentu. Setelah pemrosesan selesai, server mengirimkan kembali HTTP response yang berisi hasil dari permintaan tersebut, seperti data yang diminta atau status keberhasilan/ kegagalan operasi. Dengan pola ini, client dapat berkomunikasi dengan server secara standar melalui protokol HTTP, sehingga REST API menjadi fleksibel dan mudah diakses dari berbagai jenis perangkat dan platform.</dd>
+    </dl>
+  </li>
+</ol>
+</div>
+    </div>
+    {{>footer}}
+</body>
+</html>

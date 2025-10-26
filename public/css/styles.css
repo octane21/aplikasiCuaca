@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #e8e8e8;
+}
+
+.main-content {
+  flex-grow: 1;
+  border-radius: 10px 10px 0 0;
+}
+
+.main-content,
+footer,
+header {
+  padding: 10px;
+  background-color: white;
+}
+
+.main-content,
+footer {
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+footer {
+  border-radius: 0 0 10px 10px;
+}
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+header a {
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+.portrait {
+  width: 250px;
+}
+
+input {
+  border: 2px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 0px solid #cccccc;
+  background: #888888;
+  color: white;
+  padding: 9px;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: max-content auto;
+  background-color: rgb(105, 104, 104);
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.about-me img {
+  border-radius: 3px;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.about-me div {
+  color: #eeeeee;
+  padding: 10px;
+}
+.about-me div h2,
+.about-app h2 {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.about-app img {
+  width: 250px;
+}
+
+.about-app {
+  background-image: linear-gradient(
+    to right,
+    rgb(91, 178, 209),
+    rgb(255, 255, 255)
+  );
+  display: grid;
+  border-radius: 4px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  grid-template-columns: auto max-content;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.about-app:hover {
+  box-shadow: 0px 60px 10px -30px rgb(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.about-app div {
+  padding: 10px;
+}
+
+.bantuan {
+  padding-left: 20px;
+}
+
+dt {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+dd {
+  font-weight: normal;
+}
+
+.restful-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+footer .nama {
+  color: #414040;
+  display: inline;
+  font-weight: bold;
+}
+
+.beritaContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.beritaCard{
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.2);
+}
+
+.beritaImg{
+  width: 285px;
+  height: 285px;
+object-fit: cover;
+  object-position: center; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.tanggalAuthor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.tanggalAuthor p{
+    display: block;
+    font-weight: 600;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.beritaSpoil{
+    padding: 10px;
+}
+
+.bacaBerita{
+    margin-top: 20px;
+    background-color: #333333;
+    justify-self: end;
+    display: block;
+    text-align: end;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #cccccc;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.judulBerita{
+    margin-bottom: 10px;
+}
+
+.deskripsi{
+    color: #b0b0b0;
+     display: -webkit-box;
+  -webkit-line-clamp: 3;     /* jumlah baris */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.beritaCard {
+  position: relative;
+}
+
+.bacaBerita {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

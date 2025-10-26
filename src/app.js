@@ -8,7 +8,7 @@ import { berita } from "./utils/berita.js"
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); //
 
-
+const PORT = process.env.PORT || 3000
 const app = express();
 const direktoriPublic = path.join(__dirname, "../public");
 const direktoriViews = path.join(__dirname, "../templates/views");
@@ -103,6 +103,6 @@ app.get("/{*any}", (req, res) => {
   });
 });
 
-app.listen(4000, () => {
+app.listen(PORT, () => {
   console.log("Server berjalan pada port 4000.");
 });
